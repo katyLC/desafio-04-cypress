@@ -1,0 +1,12 @@
+{
+  "name": "Desafio04 - Cypress Avanzado",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^13.7.3",
+    "cypress-sql-server": "^1.0.0",
+    "pg": "^8.11.5"
+  },
+  "dependencies": {
+    "cypress-mysql": "^1.0.2"
+  }
+}
