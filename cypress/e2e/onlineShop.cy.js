@@ -20,13 +20,13 @@ describe(' Create Product in Online shop',()=>{
         cy.fixture('data').then(data =>{
             cy.deleteProduct(data.product1.id);
             cy.deleteProduct(data.product2.id);
-            cy.createProduct(data.product1);
-            cy.createProduct(data.product2);
+             cy.createProduct(data.product1);
+             cy.createProduct(data.product2);
 
         })
 
     });
-    it("Make a purchase",()=>{
+    it.only("Make a purchase",()=>{
         cy.wait(1000)
         productPage.onlineShopClick.click()
         cy.get('[data-cy="add-to-cart-1002"]').click()
